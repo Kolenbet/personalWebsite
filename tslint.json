@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "tslint-react"
+  ],
+  "rules": {
+    "semicolon": [
+      true,
+      "always"
+    ],
+    "trailing-comma": [
+      false
+    ]
+  }
+}
