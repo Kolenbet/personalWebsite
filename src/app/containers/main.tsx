@@ -4,9 +4,9 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router';
 import PageWrapper from '../pageWrapper/container';
 import { changeField } from '../actions/forms';
-import EmptyPageView from '../components/emptyPage';
+import MainPageView from '../components/main';
 
-class EmptyPage extends React.Component<any, any> {
+class MainPage extends React.Component<any, any> {
   constructor(props) {
     super(props);
   }
@@ -15,7 +15,7 @@ class EmptyPage extends React.Component<any, any> {
     const props = this.props;
     return (
       <PageWrapper>
-        <EmptyPageView {...props} />
+        <MainPageView {...props} />
       </PageWrapper>
     );
   }
@@ -42,4 +42,4 @@ const mergeProps = (stateProps, dispatchProps) => {
   });
 };
 
-export default connect(mapStateToProps, mapDispatchToProps, mergeProps)(EmptyPage);
+export default connect(mapStateToProps, mapDispatchToProps, mergeProps)(MainPage);
